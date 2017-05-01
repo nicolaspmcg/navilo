@@ -165,7 +165,7 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/header.jpeg');
     text-align: center;
     color: white;
     .header-content {
@@ -360,14 +360,53 @@ body {
     webkit-tap-highlight-color: @gray-darker;
 }
 
-.dueño-barco {
-  margin-top: 10px;
-}
-
 .sr-contact {
-    color: @theme-primary;
+    color: white;
+    margin-bottom: 10px;
+    padding: 5px;
+    margin-right: 10px;
 }
 
 .mail {
     color: #333333;
+}
+
+@media (max-width: 768px) {
+    .dueño-barco {
+        margin-top: 20px;
+    }
+}
+
+.indicates-required {
+    display: block;
+    text-align: right;
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: red;
+}
+
+.mc-field-group {
+    width: 100%;
+    background-color: transparent;
+    border: 0px solid;
+    border-bottom-style: solid;
+    border-bottom-color: #EEEEEE;
+    border-bottom-width: 1px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    .row {
+        text-align: right;
+        p {
+            display: inline-block;
+            vertical-align: -100%;
+            margin-right: 10px;
+        }
+        .follow {
+        float: right;
+        padding-top: 10px;
+        }
+    }
 }
